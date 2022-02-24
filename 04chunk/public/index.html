@@ -47,7 +47,7 @@
         // 获取文件对象
         let file = fileInp.files[0];
         // 把一个文件切成五个切片（固定切片数量，也可以固定切片大小）
-        let partSize = file.size / 5;
+        let partSize = file.size / 3;
         let cur = 0; // 当前的文件大小
         let i = 0; // 当前切片的索引
         let partList = []; //存放切片的数组

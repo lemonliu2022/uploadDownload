@@ -10,10 +10,11 @@ app.get('/', (req, res) => {
 app.post('/upload', (req, res) => {
     let str = ''
     req.on('data',chunk => {
-        console.log(chunk)
+        // console.log(chunk)
         str += chunk
     })
     req.on('end', () => {
+        console.log(str)
         res.send(str)
     })
 })
